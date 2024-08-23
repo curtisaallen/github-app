@@ -1,5 +1,8 @@
-# GitHub Users Finder App
+# GitHub user search app
 
 Created with Next.js and the GitHub API
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Link to demo app:
+[`Netlify Link`](https://githubcaa.netlify.app/)
+[`Vercel Link`](https://githubcaa.netlify.app/](https://github-app-sooty-omega.vercel.app/)
+
