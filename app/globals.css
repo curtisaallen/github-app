@@ -1,33 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #F6F8FF;
+  color: #000000;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.darklayout {
+   background-color: #141c2f;
+   color: #ffffff;
+}
+
+.darklayout .logo, .darklayout .header button {
+  color: #ffffff;
+}
+
+.darklayout .search-bar {
+   background-color: #1E2A47;
+}
+
+.darklayout .search-bar input {
+  background-color: #1E2A47;
+  color: #ffffff;
+}
+
+.darklayout .search-bar input::placeholder {  color: #ffffff; }
+
+.darklayout input:-webkit-autofill,
+.darklayout input:-webkit-autofill:hover,
+.darklayout input:-webkit-autofill:focus,
+.darklayout input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #1E2A47 inset !important;
+    box-shadow: 0 0 0 1000px #1E2A47 inset !important;
+    background-color: #1E2A47 !important;
+    color: #ffffff !important;
+}
+
+.darklayout .dev-profile {
+  background-color: #1E2A47;
+}
+
+.darklayout .profile-header a {
+  color: #0079FF;
+}
+
+.darklayout .profile-date p {
+  color: #ffffff;
+}
+
+.darklayout .profile-bio p {
+  color: #ffffff;
+}
+
+.darklayout .profile-repos {
+  background-color: #141D2F;
+}
+
+.darklayout .profile-repos h4 {
+  color: #ffffff;
+}
+
+.darklayout .profile-repos p {
+  color: #ffffff;
+}
+
+.darklayout .link-section p {
+  color: #ffffff;
+}
+
+.darklayout .link-section img {
+  filter: brightness(0) invert(1);
+}
+
+
+.logo {
+  font-family: 'Space Mono', monospace;
+  color: #222731;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.header button {
+  font-family: 'Space Mono', monospace;
+  color: #697C9A;
+  font-size: 13px;
+  font-weight: bold; 
+}
+
+.search-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 1em;
+}
+
+.profile-header h3 {
+  font-family: 'Space Mono', monospace;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.profile-date p {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px; 
+  color: #697C9A;
+  text-align: end;
+}
+
+.profile-bio p {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px; 
+  color: #4B6A9B;
+}
+
+.profile-repos {
+  background-color: #F6F8FF;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.profile-repos h4 {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px; 
+  color: #4B6A9B;
+}
+
+.profile-repos p {
+  font-family: 'Space Mono', monospace;
+  font-size: 22px; 
+  color: #2B3442;
+}
+
+.link-section p {
+  color: #4B6A9B;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px; 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+    background-color: white !important;
+    color: #000 !important;
+}
+
+*:focus {
+  outline: none;
 }
